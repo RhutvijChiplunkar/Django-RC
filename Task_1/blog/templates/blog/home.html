@@ -1,0 +1,17 @@
+
+{% extends 'blog/base.html' %}
+{% block content %}
+    <ul>
+    {% for i in lists %}
+     <li> {{ i }}</li>
+
+    {% endfor %}
+    </ul>
+<form  method="GET" action="nos">
+  <label for="fname">Enter starting point:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Enter ending point:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
